@@ -302,7 +302,7 @@ function Hero() {
         </motion.div>
 
         {/* JAMIN */}
-        <div style={{ overflow: "hidden", marginBottom: 2 }}>
+        <div style={{ overflow: "hidden", marginBottom: "clamp(1.25rem, 3.5vw, 2.75rem)" }}>
           <motion.h1
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
@@ -310,7 +310,8 @@ function Hero() {
             style={{
               fontFamily: "'Playfair Display',serif", fontWeight: 900,
               fontSize: "clamp(3.8rem,12vw,11rem)",
-              lineHeight: 0.88, color: "#fff", letterSpacing: "-0.02em",
+              lineHeight: 1, color: "#fff", letterSpacing: "-0.02em",
+              paddingBottom: "0.12em",
             }}
           >
             JAMIN
@@ -318,7 +319,7 @@ function Hero() {
         </div>
 
         {/* MANDELA + tag */}
-        <div style={{ overflow: "hidden", display: "flex", alignItems: "flex-end", gap: "clamp(1rem,2vw,2rem)", flexWrap: "wrap" }}>
+        <div style={{ overflow: "hidden", display: "flex", alignItems: "flex-end", gap: "clamp(1rem,2vw,2rem)", flexWrap: "wrap", marginTop: "clamp(-1.75rem, -2.5vw, -1rem)", position: "relative", zIndex: 2 }}>
           <motion.h1
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
@@ -326,7 +327,8 @@ function Hero() {
             style={{
               fontFamily: "'Playfair Display',serif", fontWeight: 900, fontStyle: "italic",
               fontSize: "clamp(3.8rem,12vw,11rem)",
-              lineHeight: 0.88, color: "#990000", letterSpacing: "-0.02em",
+              lineHeight: 1, color: "#990000", letterSpacing: "-0.02em",
+              position: "relative", zIndex: 2,
             }}
           >
             MANDELA
